@@ -80,52 +80,59 @@ public class MainActivity extends AppCompatActivity {
     private void Lancer(){
         /* test du Random
         SecureRandom random = new SecureRandom();
-        int lo = random.nextInt(20);
-         String t = Integer.toString(lo);
-        Toast.makeText(this, t, Toast.LENGTH_SHORT).show();
-
-        for  (int i=0; i<=positionInt_Nbr; i++){
-            String t = Integer.toString(result[i]);
-            Toast.makeText(this, "oui", Toast.LENGTH_SHORT).show();
-        }
+        int[] result = new int[positionInt_Nbr+1]; Stock les valeurs
+        int nbr; Valeur géneré
+        for  (int i=0; i<positionInt_Nbr+1; i++){ Tourne selon le nbr de dés
+                nbr = random.nextInt(Integer.valueOf(nbrF))+1; +1 pour éviter le 0 car nextInt[0,x}
+                result[i]=nbr;
+            }
         */
-
-        int k = positionInt_Nbr+1 ;
-        String t = Integer.toString(k);
-        Toast.makeText(this, t, Toast.LENGTH_SHORT).show();
-
-        /*
         Intent intent = new Intent(this, PageResult.class);
         SecureRandom random = new SecureRandom();
-        int[] result = new int[4];
-
+        int[] result = new int[positionInt_Nbr+1];
         int nbr;
+
         if (positionInt_F==0){//f4
-            for  (int i=0; i<=positionInt_Nbr; i++){
-                nbr =random.nextInt(4); // tester plus tard aves le positionInt_F
+            for  (int i=0; i<positionInt_Nbr+1; i++){
+                nbr = random.nextInt(Integer.valueOf(nbrF))+1;
                 result[i]=nbr;
             }
         }
-
-
-
         if (positionInt_F==1){//f6
-
+            for  (int i=0; i<positionInt_Nbr+1; i++){
+                nbr = random.nextInt(Integer.valueOf(nbrF))+1;
+                result[i]=nbr;
+            }
         }
         if (positionInt_F==2){//f8
-
+            for  (int i=0; i<positionInt_Nbr+1; i++){
+                nbr = random.nextInt(Integer.valueOf(nbrF))+1;
+                result[i]=nbr;
+            }
         }
         if (positionInt_F==3){//f10
-
+            for  (int i=0; i<positionInt_Nbr+1; i++){
+                nbr = random.nextInt(Integer.valueOf(nbrF))+1;
+                result[i]=nbr;
+            }
         }
         if (positionInt_F==4){//f12
-
+            for  (int i=0; i<positionInt_Nbr+1; i++){
+                nbr = random.nextInt(Integer.valueOf(nbrF))+1;
+                result[i]=nbr;
+            }
         }
-        if (positionInt_F==4){//f20
-
-        }*/
-
-
+        if (positionInt_F==5){//f20
+            for  (int i=0; i<positionInt_Nbr+1; i++){
+                nbr = random.nextInt(Integer.valueOf(nbrF))+1;
+                result[i]=nbr;
+            }
+        }
+        int h = positionInt_Nbr+1;
+        intent.putExtra("result", result);
+        intent.putExtra("nbrFace", nbrF);
+        intent.putExtra("nbrDes", Integer.toString(positionInt_Nbr+1));
+        startActivity(intent);
     }
 }
 
