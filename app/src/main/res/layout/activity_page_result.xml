@@ -23,7 +23,7 @@
         android:textSize="16sp" />
 
     <TextView
-        android:id="@+id/txtResult"
+        android:id="@+id/txtResultDee"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="5pt"
@@ -40,7 +40,6 @@
             android:id="@+id/btRelancer"
             android:layout_width="193dp"
             android:layout_height="match_parent"
-            android:layout_marginTop="0sp"
             android:text="Relancer" />
 
         <Button
@@ -50,5 +49,81 @@
             android:text="Retour Arrière" />
     </LinearLayout>
 
+    <ImageView
+        android:id="@+id/d1"
+        android:layout_marginTop="15sp"
+        android:layout_marginRight="207sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/nd6"/>
+    <ImageView
+        android:id="@+id/d2"
+        android:layout_marginLeft="207sp"
+        android:layout_marginTop="-105sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/nd6"/>
+
+
+    <ImageView
+        android:id="@+id/d3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/nd6"/>
+
+    <ImageView
+        android:id="@+id/d4"
+        android:layout_marginRight="207sp"
+        android:layout_marginTop="-2sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/nd6"/>
+    <ImageView
+        android:id="@+id/d5"
+        android:layout_marginLeft="207sp"
+        android:layout_marginTop="-104sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/nd6"/>
+
+    <TextView
+        android:id="@+id/txtResultFinalD1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-177sp"
+        android:gravity="center"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/txtResultFinalD2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-147sp"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/txtResultFinalD4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-41sp"
+        android:gravity="right"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/txtResultFinalD3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:layout_marginTop="167sp"
+        android:text="gg           "
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/txtResultFinalD5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-44sp"
+        android:text="           gg"
+        android:textSize="30sp" />
 
 </LinearLayout>
